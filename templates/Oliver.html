@@ -90,7 +90,8 @@
                                 // Code to execute when the button is clicked
                                const veezooIframe = document.getElementById('veezoo-iframe');
                                var message = {
-                                   boardId: item.id
+                                    type: 'openBoard',
+                                    boardId: item.id
                                };
                                veezooIframe.contentWindow.postMessage(message, '*');
                             });
